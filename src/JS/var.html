@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en" data-mui-color-scheme="light" data-joy-color-scheme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="mui:productId" content="material-ui" />
+    <meta name="mui:productCategoryId" content="core" />
+    <title>MUI: A popular React UI framework</title>
+    <meta
+      name="description"
+      content="MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MUI_hq" />
+    <meta name="twitter:title" content="MUI: A popular React UI framework" />
+    <meta
+      name="twitter:description"
+      content="MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mui.com/static/social-previews/default-preview.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MUI: A popular React UI framework" />
+    <meta
+      property="og:url"
+      content="https://mui.com/material-ui/getting-started/templates/album/"
+    />
+    <meta
+      property="og:description"
+      content="MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design."
+    />
+    <meta
+      property="og:image"
+      content="https://mui.com/static/social-previews/default-preview.jpg"
+    />
+    <meta property="og:ttl" content="604800" />
+    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:version" content="master" />
+    <link
+      rel="alternate"
+      href="https://mui.com/material-ui/getting-started/templates/album/"
+      hreflang="en"
+    />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="next-head-count" content="21" />
+    <link rel="manifest" href="/static/manifest.json" />
+    <meta
+      name="theme-color"
+      content="#0072E5"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#101418"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icons/180x180.png"
+    />
+    <link
+      rel="canonical"
+      href="https://mui.com/material-ui/getting-started/templates/album/"
+    />
+    <link
+      rel="alternate"
+      href="https://mui.com/material-ui/getting-started/templates/album/"
+      hreflang="x-default"
+    />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/GeneralSans-Semibold-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @font-face {
+        font-family: "General Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url("/static/fonts/GeneralSans-Semibold-subset.woff2")
+          format("woff2");
+      }
+    </style>
+    <link
+      rel="preload"
+      href="/static/fonts/IBMPlexSans-Regular-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <style>
+      @font-face {
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("/static/fonts/IBMPlexSans-Regular-subset.woff2")
+          format("woff2");
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "General Sans";
+        src: url(/static/fonts/GeneralSans-Regular.woff2) format("woff2"),
+          url(/static/fonts/GeneralSans-Regular.ttf) format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "General Sans";
+        src: url(/static/fonts/GeneralSans-Medium.woff2) format("woff2"),
+          url(/static/fonts/GeneralSans-Medium.ttf) format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "General Sans";
+        src: url(/static/fonts/GeneralSans-SemiBold.woff2) format("woff2"),
+          url(/static/fonts/GeneralSans-SemiBold.ttf) format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "General Sans";
+        src: url(/static/fonts/GeneralSans-Bold.woff2) format("woff2"),
+          url(/static/fonts/GeneralSans-Bold.ttf) format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "IBM Plex Sans";
+        src: url(/static/fonts/IBMPlexSans-Regular.woff2) format("woff2"),
+          url(/static/fonts/IBMPlexSans-Regular.woff) format("woff"),
+          url(/static/fonts/IBMPlexSans-Regular.ttf) format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "IBM Plex Sans";
+        src: url(/static/fonts/IBMPlexSans-Medium.woff2) format("woff2"),
+          url(/static/fonts/IBMPlexSans-Medium.woff) format("woff"),
+          url(/static/fonts/IBMPlexSans-Medium.ttf) format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "IBM Plex Sans";
+        src: url(/static/fonts/IBMPlexSans-SemiBold.woff2) format("woff2"),
+          url(/static/fonts/IBMPlexSans-SemiBold.woff) format("woff"),
+          url(/static/fonts/IBMPlexSans-SemiBold.ttf) format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "IBM Plex Sans";
+        src: url(/static/fonts/IBMPlexSans-Bold.woff2) format("woff2"),
+          url(/static/fonts/IBMPlexSans-Bold.woff) format("woff"),
+          url(/static/fonts/IBMPlexSans-Bold.ttf) format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <style data-emotion="css-global 116mcd0">
+      .only-light-mode {
+        display: block;
+      }
+      .only-dark-mode {
+        display: none;
+      }
+      .mode-dark .only-light-mode {
+        display: none;
+      }
+      .mode-dark .only-dark-mode {
+        display: block;
+      }
+      [data-mui-color-scheme="light"] .only-dark-mode-v2 {
+        display: none;
+      }
+      [data-mui-color-scheme="dark"] .only-light-mode-v2 {
+        display: none;
+      }
+      .plan-pro,
+      .plan-premium {
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        vertical-align: middle;
+        margin-left: 0.3em;
+        margin-bottom: 0.08em;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .plan-pro {
+        background-image: url(/static/x/pro.svg);
+      }
+      .plan-premium {
+        background-image: url(/static/x/premium.svg);
+      }
+    </style>
+    <link
+      rel="preload"
+      href="/_next/static/css/022657a64d2cc6df.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/022657a64d2cc6df.css"
+      data-n-g=""
+    />
+    <noscript data-n-css=""></noscript>
+    <script
+      defer=""
+      nomodule=""
+      src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"
+    ></script>
+    <script
+      src="/_next/static/chunks/webpack-5cdc94458444a7aa.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/framework-e0572add61a0c7a5.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/main-ec13bd110aa0fe9b.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/pages/_app-8d6965820a86741f.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/64631-d624ce7d2e8e683e.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/55308-74c349b7e7eccdb9.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/96369-f886bf78a249433c.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/chunks/pages/material-ui/getting-started/templates/album-426bbb54f97df66f.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/X9HPGD8v-2jfHL09_CUyC/_buildManifest.js"
+      defer=""
+    ></script>
+    <script
+      src="/_next/static/X9HPGD8v-2jfHL09_CUyC/_ssgManifest.js"
+      defer=""
+    ></script>
+    <style id="material-icon-font"></style>
+    <style id="font-awesome-css"></style>
+    <style data-styled="" data-styled-version="5.3.11"></style>
+    <style data-emotion="css-global o6gwfi">
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+        -webkit-text-size-adjust: 100%;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      strong,
+      b {
+        font-weight: 700;
+      }
+      body {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.00938em;
+        background-color: #fff;
+      }
+      @media print {
+        body {
+          background-color: #fff;
+        }
+      }
+      body::backdrop {
+        background-color: #fff;
+      }
+    </style>
+    <style
+      data-emotion="css 3hykmi i6s8oy 1xpyc8b t7ndjn 10m0cap 1m6pqln ybmzf6 1sar9pk ad60k4 1hw9j7s 79xub 18kddpf 1tz8m30 1twzmnh ctmtb0 1w909y4 10ofaip t1nuxs 9l3uo3 3zukih 1rtnrqa 16ybtzv a2yyq6 1yqxwau rdifmp 1i1yl23"
+    >
+      .css-3hykmi {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.87);
+        -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+          0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        position: relative;
+        background-color: #1976d2;
+        color: #fff;
+      }
+      .css-i6s8oy {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        min-height: 56px;
+      }
+      @media (min-width: 600px) {
+        .css-i6s8oy {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      @media (min-width: 0px) {
+        @media (orientation: landscape) {
+          .css-i6s8oy {
+            min-height: 48px;
+          }
+        }
+      }
+      @media (min-width: 600px) {
+        .css-i6s8oy {
+          min-height: 64px;
+        }
+      }
+      .css-1xpyc8b {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        fill: currentColor;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        font-size: 1.5rem;
+        margin-right: 16px;
+      }
+      .css-t7ndjn {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        letter-spacing: 0.0075em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: inherit;
+      }
+      .css-10m0cap {
+        background-color: #fff;
+        padding-top: 64px;
+        padding-bottom: 48px;
+      }
+      .css-1m6pqln {
+        width: 100%;
+        margin-left: auto;
+        box-sizing: border-box;
+        margin-right: auto;
+        display: block;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      @media (min-width: 600px) {
+        .css-1m6pqln {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      @media (min-width: 600px) {
+        .css-1m6pqln {
+          max-width: 600px;
+        }
+      }
+      .css-ybmzf6 {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 300;
+        font-size: 3.75rem;
+        line-height: 1.2;
+        letter-spacing: -0.00833em;
+        text-align: center;
+        margin-bottom: 0.35em;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      .css-1sar9pk {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.334;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 16px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .css-ad60k4 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        padding-top: 32px;
+      }
+      .css-ad60k4 > :not(style):not(style) {
+        margin: 0;
+      }
+      .css-ad60k4 > :not(style) ~ :not(style) {
+        margin-left: 16px;
+      }
+      .css-1hw9j7s {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        color: inherit;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        min-width: 64px;
+        padding: 6px 16px;
+        border-radius: 4px;
+        -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+            0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        color: #fff;
+        background-color: #1976d2;
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      }
+      .css-1hw9j7s::-moz-focus-inner {
+        border-style: none;
+      }
+      .css-1hw9j7s.Mui-disabled {
+        pointer-events: none;
+        cursor: default;
+      }
+      @media print {
+        .css-1hw9j7s {
+          -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+        }
+      }
+      .css-1hw9j7s:hover {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        background-color: #1565c0;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+          0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      }
+      @media (hover: none) {
+        .css-1hw9j7s:hover {
+          background-color: #1976d2;
+        }
+      }
+      .css-1hw9j7s:active {
+        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+          0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+          0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+      .css-1hw9j7s.Mui-focusVisible {
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+      }
+      .css-1hw9j7s.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.12);
+      }
+      .css-79xub {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        color: inherit;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        min-width: 64px;
+        padding: 5px 15px;
+        border-radius: 4px;
+        -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+            0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border: 1px solid rgba(25, 118, 210, 0.5);
+        color: #1976d2;
+      }
+      .css-79xub::-moz-focus-inner {
+        border-style: none;
+      }
+      .css-79xub.Mui-disabled {
+        pointer-events: none;
+        cursor: default;
+      }
+      @media print {
+        .css-79xub {
+          -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+        }
+      }
+      .css-79xub:hover {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        background-color: rgba(25, 118, 210, 0.04);
+        border: 1px solid #1976d2;
+      }
+      @media (hover: none) {
+        .css-79xub:hover {
+          background-color: transparent;
+        }
+      }
+      .css-79xub.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+        border: 1px solid rgba(0, 0, 0, 0.12);
+      }
+      .css-18kddpf {
+        width: 100%;
+        margin-left: auto;
+        box-sizing: border-box;
+        margin-right: auto;
+        display: block;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+      @media (min-width: 600px) {
+        .css-18kddpf {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      @media (min-width: 900px) {
+        .css-18kddpf {
+          max-width: 900px;
+        }
+      }
+      .css-1tz8m30 {
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: -32px;
+        width: calc(100% + 32px);
+        margin-left: -32px;
+      }
+      .css-1tz8m30 > .MuiGrid-item {
+        padding-top: 32px;
+      }
+      .css-1tz8m30 > .MuiGrid-item {
+        padding-left: 32px;
+      }
+      .css-1twzmnh {
+        box-sizing: border-box;
+        margin: 0;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        max-width: 100%;
+      }
+      @media (min-width: 600px) {
+        .css-1twzmnh {
+          -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+          -webkit-box-flex: 0;
+          -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+          flex-grow: 0;
+          max-width: 50%;
+        }
+      }
+      @media (min-width: 900px) {
+        .css-1twzmnh {
+          -webkit-flex-basis: 33.333333%;
+          -ms-flex-preferred-size: 33.333333%;
+          flex-basis: 33.333333%;
+          -webkit-box-flex: 0;
+          -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+          flex-grow: 0;
+          max-width: 33.333333%;
+        }
+      }
+      @media (min-width: 1200px) {
+        .css-1twzmnh {
+          -webkit-flex-basis: 33.333333%;
+          -ms-flex-preferred-size: 33.333333%;
+          flex-basis: 33.333333%;
+          -webkit-box-flex: 0;
+          -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+          flex-grow: 0;
+          max-width: 33.333333%;
+        }
+      }
+      @media (min-width: 1536px) {
+        .css-1twzmnh {
+          -webkit-flex-basis: 33.333333%;
+          -ms-flex-preferred-size: 33.333333%;
+          flex-basis: 33.333333%;
+          -webkit-box-flex: 0;
+          -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+          flex-grow: 0;
+          max-width: 33.333333%;
+        }
+      }
+      .css-ctmtb0 {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.87);
+        -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .css-1w909y4 {
+        display: block;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-position: center;
+        background-position: center;
+        padding-top: 56.25%;
+      }
+      .css-10ofaip {
+        padding: 16px;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+      .css-10ofaip:last-child {
+        padding-bottom: 24px;
+      }
+      .css-t1nuxs {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.334;
+        letter-spacing: 0em;
+        margin-bottom: 0.35em;
+      }
+      .css-9l3uo3 {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.00938em;
+      }
+      .css-3zukih {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 8px;
+      }
+      .css-3zukih > :not(:first-of-type) {
+        margin-left: 8px;
+      }
+      .css-1rtnrqa {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        color: inherit;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        min-width: 64px;
+        padding: 4px 5px;
+        border-radius: 4px;
+        -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+            0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        color: #1976d2;
+      }
+      .css-1rtnrqa::-moz-focus-inner {
+        border-style: none;
+      }
+      .css-1rtnrqa.Mui-disabled {
+        pointer-events: none;
+        cursor: default;
+      }
+      @media print {
+        .css-1rtnrqa {
+          -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+        }
+      }
+      .css-1rtnrqa:hover {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        background-color: rgba(25, 118, 210, 0.04);
+      }
+      @media (hover: none) {
+        .css-1rtnrqa:hover {
+          background-color: transparent;
+        }
+      }
+      .css-1rtnrqa.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+      }
+      .css-16ybtzv {
+        background-color: #fff;
+        padding: 48px;
+      }
+      .css-a2yyq6 {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        letter-spacing: 0.0075em;
+        text-align: center;
+        margin-bottom: 0.35em;
+      }
+      .css-1yqxwau {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.75;
+        letter-spacing: 0.00938em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .css-rdifmp {
+        margin: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.43;
+        letter-spacing: 0.01071em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .css-1i1yl23 {
+        margin: 0;
+        font: inherit;
+        color: inherit;
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+        color: inherit;
+      }
+      .css-1i1yl23:hover {
+        text-decoration-color: inherit;
+      }
+    </style>
+    <style id="jss-server-side"></style>
+    <style id="app-search"></style>
+    <style id="prismjs"></style>
+    <style id="insertion-point-jss"></style>
+  </head>
+  <body>
+    <script>
+      (function () {
+        try {
+          var mode = localStorage.getItem("mui-mode") || "system";
+          var colorScheme = "";
+          if (mode === "system") {
+            // handle system mode
+            var mql = window.matchMedia("(prefers-color-scheme: dark)");
+            if (mql.matches) {
+              colorScheme =
+                localStorage.getItem("mui-color-scheme-dark") || "dark";
+            } else {
+              colorScheme =
+                localStorage.getItem("mui-color-scheme-light") || "light";
+            }
+          }
+          if (mode === "light") {
+            colorScheme =
+              localStorage.getItem("mui-color-scheme-light") || "light";
+          }
+          if (mode === "dark") {
+            colorScheme =
+              localStorage.getItem("mui-color-scheme-dark") || "dark";
+          }
+          if (colorScheme) {
+            document.documentElement.setAttribute(
+              "data-mui-color-scheme",
+              colorScheme
+            );
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script>
+      (function () {
+        try {
+          var mode = localStorage.getItem("joy-mode") || "system";
+          var colorScheme = "";
+          if (mode === "system") {
+            var mql = window.matchMedia("(prefers-color-scheme: dark)");
+            if (mql.matches) {
+              colorScheme =
+                localStorage.getItem("joy-color-scheme-dark") || "dark";
+            } else {
+              colorScheme =
+                localStorage.getItem("joy-color-scheme-light") || "light";
+            }
+          }
+          if (mode === "light") {
+            colorScheme =
+              localStorage.getItem("joy-color-scheme-light") || "light";
+          }
+          if (mode === "dark") {
+            colorScheme =
+              localStorage.getItem("joy-color-scheme-dark") || "dark";
+          }
+          if (colorScheme) {
+            document.documentElement.setAttribute(
+              "data-joy-color-scheme",
+              colorScheme
+            );
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <div id="__next">
+      <header
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionRelative css-3hykmi"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy"
+        >
+          <svg
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1xpyc8b"
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            data-testid="PhotoCameraIcon"
+          >
+            <circle cx="12" cy="12" r="3.2"></circle>
+            <path
+              d="M9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"
+            ></path>
+          </svg>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-t7ndjn"
+          >
+            PRABHAS  Movie Album
+          </h6>
+        </div>
+      </header>
+      <main>
+        <div class="MuiBox-root css-10m0cap">
+          <div class="MuiContainer-root MuiContainer-maxWidthSm css-1m6pqln">
+            <h1
+              class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter MuiTypography-gutterBottom css-ybmzf6"
+            >
+            Prabhas
+            </h1>
+            <p
+              class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter MuiTypography-paragraph css-1sar9pk"
+            >
+            Movie <br></br>
+            Movies are stories told through moving images and sound. 
+            They entertain, inspire, and take us on journeys to different worlds,
+           all within the span of a few hours.
+            </p>
+            <div class="MuiStack-root css-ad60k4">
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1hw9j7s"
+                tabindex="0"
+                type="button"
+              >
+               Movies</button>
+            </div>
+          </div>
+        </div>
+        <div class="MuiContainer-root MuiContainer-maxWidthMd css-18kddpf">
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/10/2021_10$largeimg_854137532.jpeg');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                  Radhe Shyam 
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                   In 1970s Europe, a world-renowned palmist named Vikramaditya finds love when he meets Prerana, a doctor.
+                   However, their relationship is threatened by his view of destiny and a terminal illness.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://assets.gqindia.com/photos/648ab4150129d966909de0d9/16:9/w_2560%2Cc_limit/Prabhas%2520in%2520Adipurush.jpg');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                    ADHIPURSH
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    Raghav, the prince of the Ikshvaku dynasty from Kosala, tries 
+                    to rescue his wife, Janaki, from the demon king Lankesh.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://img.naidunia.com/naidunia/prabhas_saaho_trailer.jpeg_10_08_2019.jpg');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                  SAHOO
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    An undercover agent and his partner go after a thief who has stolen 2,000 crore rupees. Soon, 
+                    they realise that the case is linked to the death of a crime lord and an emerging gang war.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://media.tenor.com/9o6m3MQshloAAAAd/shivering-fear.gif');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                  Fear
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://gifdb.com/images/high/brahmanandam-angry-beat-you-up-yhdol56tgj0h7h5q.gif');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                  Anger
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://media.kulfyapp.com/1QH5QJ/1QH5QJ-360.gif');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                    Kindness
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://media.kulfyapp.com/3WPK6Q/3WPK6Q-360.gif');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                    Shy
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://media.kulfyapp.com/JeTRTO/JeTRTO-360.gif');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                    Shock
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-1twzmnh"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ctmtb0"
+              >
+                <div
+                  class="MuiCardMedia-root css-1w909y4"
+                  role="img"
+                  style="
+                    background-image: url('https://media.tenor.com/K06Vfs4pwvwAAAAC/brahmanandham-sad.gif');
+                  "
+                ></div>
+                <div class="MuiCardContent-root css-10ofaip">
+                  <h2
+                    class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-t1nuxs"
+                  >
+                    Sad
+                  </h2>
+                  <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
+                    This is a media card. You can use this section to describe
+                    the content.
+                  </p>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing css-3zukih"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1rtnrqa"
+                    tabindex="0"
+                    type="button"
+                  >
+                    View</button
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="MuiBox-root css-16ybtzv">
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter MuiTypography-gutterBottom css-a2yyq6"
+        >
+          Follow for more 
+        </h6>
+        <p
+          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-alignCenter css-1yqxwau"
+        >
+        <div align="center">
+        <p>Instagram</p>
+        <i class="fa fa-instagram" style="font-size:48px;color:red"></i>
+        </p>
+      </div>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-rdifmp"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1i1yl23"
+            href="https://www.instagram.com/actorprabhas/feed/?hl=en#:~:text=Prabhas%20(%40actorprabhas)%20%E2%80%A2%20Instagram%20photos%20and%20videos"
+            >Check for more</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", "G-5NXDQLC2ZK", {
+        send_page_view: false,
+      });
+    </script>
+    <script id="_NEXT_DATA_" type="application/json">
+      {
+        "props": { "pageProps": { "userLanguage": "en" } },
+        "page": "/material-ui/getting-started/templates/album",
+        "query": { "userLanguage": "en" },
+        "buildId": "X9HPGD8v-2jfHL09_CUyC",
+        "nextExport": true,
+        "isFallback": false,
+        "appGip": true,
+        "scriptLoader": [
+          {
+            "strategy": "afterInteractive",
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-5NXDQLC2ZK"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
